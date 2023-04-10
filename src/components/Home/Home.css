@@ -1,0 +1,61 @@
+.banner-container {
+    display: flex;
+    row-gap: 50px;
+
+}
+
+.banner-details {
+    margin-left: 160px;
+    margin-top: 100px;
+}
+
+.banner-details h1 {
+    font-size: 50px;
+}
+
+.text-dream {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
+
+.banner-details button {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+}
+
+.banner-container img {
+    width: 716px;
+    height: 644px;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+/*-------------------------------- Job Category List styles ----------------------------- */
+
+.job-category-container{
+    margin-top: 80px;
+}
+
+.job-category-container h2{
+    font-size: 35px;
+}
+
+.job-category-container p{
+    margin-bottom: 30px;
+}
+
+.job-category-container h2 , p{
+    text-align: center;
+    color: #546af7 ;
+    /* background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; */
+}
