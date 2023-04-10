@@ -1,0 +1,29 @@
+.category-details {
+    background: whitesmoke;
+    padding: 20px 20px 12px 20px;
+    border-radius: 8px;
+    width: 180px;
+    margin-right: 20px;
+    /* margin-bottom: 100px; */
+    /* height: 243px; */
+}
+
+.category-details img{
+    background-color: #EFECFF;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.category-details h5{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #474747;
+}
+
+.category-details p{
+    margin: 0px 0px 12px 10px;
+    color: #A3A3A3;
+}

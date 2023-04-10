@@ -44,18 +44,26 @@
 
 .job-category-container h2{
     font-size: 35px;
+    text-align: center;
+    color: #546af7 ;
 }
 
 .job-category-container p{
     margin-bottom: 30px;
+    text-align: center;
+    /* color: #546af7 ; */
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+    
 }
 
 .job-category-container h2 , p{
-    text-align: center;
-    color: #546af7 ;
-    /* background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent; */
+    
+  
 }
