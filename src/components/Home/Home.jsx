@@ -53,6 +53,7 @@ const Home = () => {
                     }
                 </div>
             </div>
+            <button className='btn-see-all-jobs'>See All Jobs</button>
         </div>
     );
 };

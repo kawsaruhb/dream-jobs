@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot, faDollar } from '@fortawesome/free-solid-svg-icons'
 import './FeaturedJobs.css'
 
 const FeaturedJobs = ({job}) => {
@@ -6,17 +8,17 @@ const FeaturedJobs = ({job}) => {
     return (
         <div className='job-details-container'>
             <img src={companyLogo} alt="" />
-            <h5>{jobTitle}</h5>
+            <h4>{jobTitle}</h4>
             <p>{companyName}</p>
-            <div>
-                <p>{remoteOrOnsite}</p>
-                <p>{fulltimeOrPartTime}</p>
+            <div className='site-time'>
+                <p className='remote-onsite'>{remoteOrOnsite}</p>
+                <p className='full-part-time'>{fulltimeOrPartTime}</p>
             </div>
-            <div>
-                <p>{location}</p>
-                <p>{salary}</p>
+            <div className='location-salary'>
+                <p><FontAwesomeIcon icon={faLocationDot} /> {location}</p>
+                <p><FontAwesomeIcon icon={faDollar} /> {salary}</p>
             </div>
-            <button>View Details</button>
+            <button className='btn-view-details'>View Details</button>
         </div>
     );
 };

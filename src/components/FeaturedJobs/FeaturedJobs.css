@@ -1,6 +1,67 @@
 .job-details-container {
-    width: 500px;
+    padding: 30px;
     border: 1px solid #E8E8E8;
     border-radius: 8px;
-    padding: 50px;
+}
+
+.job-details-container h4 {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    color: #474747;
+}
+
+.job-details-container p {
+    margin: 5px 0 0 0;
+}
+
+.site-time {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.remote-onsite {
+    border: 1px solid #7E90FE;
+    border-radius: 3px;
+    padding: 4px;
+    width: 70px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 12px;
+
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
+
+.full-part-time {
+    border: 1px solid #7E90FE;
+    border-radius: 3px;
+    padding: 4px;
+    width: 70px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 12px;
+
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.location-salary {
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-view-details {
+    color: white;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 4px;
 }

@@ -65,10 +65,21 @@
 
 /* ---------------------------- Featured Jobs Styles ---------------------------- */
 
-.featured-jobs-details{
+.featured-jobs-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 20px;
-    justify-items: center;
-    
+    gap: 15px;
+    width: 950px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.btn-see-all-jobs{
+    width: 140px;
+    height: 49px;
+    color: white;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;;
 }
