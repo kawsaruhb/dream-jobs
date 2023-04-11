@@ -38,32 +38,37 @@
 
 /*-------------------------------- Job Category List styles ----------------------------- */
 
-.job-category-container{
+.job-category-container {
     margin-top: 80px;
 }
 
-.job-category-container h2{
+.job-category-container h2 {
     font-size: 35px;
     text-align: center;
-    color: #546af7 ;
+    color: #546af7;
 }
 
-.job-category-container p{
+.job-category-container p {
     margin-bottom: 30px;
     text-align: center;
     /* color: #546af7 ; */
 }
 
-.category{
+.category {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    
-    
+
+
 }
 
-.job-category-container h2 , p{
+/* ---------------------------- Featured Jobs Styles ---------------------------- */
+
+.featured-jobs-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    justify-items: center;
     
-  
 }

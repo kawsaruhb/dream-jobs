@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css'
 import JobCategory from '../JobCategory/JobCategory';
+import { useLoaderData } from 'react-router-dom';
+import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 
 const Home = () => {
     const [categories, setCategories] = useState([]);
@@ -10,6 +12,8 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setCategories(data))
     }, [])
+
+    const featuredJobs = useLoaderData().slice(0,4);
 
     return (
         <div>
@@ -39,6 +43,14 @@ const Home = () => {
                 <div className='job-category-container'>
                     <h2>Featured Jobs</h2>
                     <p><small>Explore thousands of job opportunities with all the information you need. Its your future</small></p>
+                </div>
+                <div className='featured-jobs-details'>
+                    {
+                        featuredJobs.map(job => <FeaturedJobs
+                        key={job.id}
+                        job={job}
+                        ></FeaturedJobs>)
+                    }
                 </div>
             </div>
         </div>
