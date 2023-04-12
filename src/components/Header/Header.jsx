@@ -6,7 +6,7 @@ import ActiveLink from '../ActiveLink/ActiveLink';
 const Header = () => {
     return (
         <nav className='py-8 header-container'>
-            <h2>Dr&euro;amJobs&reg;</h2>
+            <h2 className='text-3xl font-bold'>Dr&euro;amJobs&reg;</h2>
             <div>
                 <ActiveLink className='no-underline' to='/'>Home</ActiveLink>
                 <ActiveLink to='/statistics'>Statistics</ActiveLink>
