@@ -1,0 +1,13 @@
+.job-details {
+    display: flex;
+    padding: 100px;
+    column-gap: 20px;
+}
+
+.details-card{
+    width: 872px;
+}
+
+.job-card {
+    
+}

@@ -3,6 +3,7 @@ import './Home.css'
 import JobCategory from '../JobCategory/JobCategory';
 import { useLoaderData } from 'react-router-dom';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
+import JobDetail from '../JobDetail/JobDetail';
 
 const Home = () => {
     const [categories, setCategories] = useState([]);
@@ -21,7 +22,7 @@ const Home = () => {
                 <div className='banner-details'>
                     <h1><b> One Step Closer To Your <span className='text-dream'>Dream Job</span></b></h1>
                     <p>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
-                    <button>Get Started</button>
+                    <button className='p-2'>Get Started</button>
                 </div>
                 <img src="https://i.ibb.co/hFn3YFg/P3-OLGJ1-copy-1.png" alt="" />
             </div>
@@ -32,7 +33,7 @@ const Home = () => {
             </div>
             <div className='category'>
                 {
-                    categories.map(category => <JobCategory
+                    categories?.map(category => <JobCategory
                         key={category._id}
                         category={category}
                     ></JobCategory>)
@@ -46,7 +47,7 @@ const Home = () => {
                 </div>
                 <div className='featured-jobs-details'>
                     {
-                        featuredJobs.map(job => <FeaturedJobs
+                        featuredJobs && featuredJobs?.map(job => <FeaturedJobs
                         key={job.id}
                         job={job}
                         ></FeaturedJobs>)
