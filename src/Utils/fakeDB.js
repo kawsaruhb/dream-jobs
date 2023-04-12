@@ -21,4 +21,14 @@ const addToDb = jobId => {
 
 }
 
-export {addToDb}
+const getStoredCart = () => {
+    let shoppingCart = {};
+
+    const storedCart = localStorage.getItem('jobId');
+    if(storedCart){
+        shoppingCart = JSON.parse(storedCart)
+    }
+    return shoppingCart;
+}
+
+export {addToDb, getStoredCart}
