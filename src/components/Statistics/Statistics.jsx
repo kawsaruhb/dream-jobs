@@ -15,17 +15,6 @@ const Statistics = () => {
         { name: "Assignment 8", mark: 56 },
     ];
 
-    // const data01 = [
-    //     { name: 'Group A', value: 400 },
-    //     { name: 'Group B', value: 300 },
-    //     { name: 'Group C', value: 300 },
-    //     { name: 'Group D', value: 200 },
-    //     { name: 'Group E', value: 278 },
-    //     { name: 'Group F', value: 189 },
-    //   ];
-      
-
-
     return (
         <div>
             <ResponsiveContainer width="100%" aspect={3}>

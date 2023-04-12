@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './JobDetail.css'
 import { useLoaderData, useParams } from 'react-router-dom';
 import Job from '../Job/Job';
+import { addToDb } from '../../Utils/fakeDB';
 
 
 const JobDetail = () => {
@@ -15,6 +16,11 @@ const JobDetail = () => {
         setJob(jobData);
     }, [])
     // console.log(job)
+
+    const handleAppliedJobBtn = jobId => {
+       addToDb(jobId)
+    }
+
     return (
         <>
             <h2 className='text-center mt-8 font-bold text-2xl'>Job Details</h2>
@@ -29,7 +35,7 @@ const JobDetail = () => {
                 </div>
                 <div className="job-card">
                     <Job job={job} />
-                    <button class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-44 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 my-4 ">Apply Now</button>
+                    <button onClick={() => handleAppliedJobBtn(jobId)} class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-44 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 my-4 ">Apply Now</button>
                 </div>
             
             </div>
